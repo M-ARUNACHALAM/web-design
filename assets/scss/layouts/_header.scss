@@ -1,0 +1,40 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as func;
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 20rem;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    font-family:var.$font-primary;
+
+&--menu{
+    display: flex;
+    list-style: none; 
+    align-items: center;
+    text-transform: uppercase;
+
+             &--item>a {
+             margin-right: 3rem;
+             font-size: 14px;
+             font-weight: 600;
+             color: #242424;
+             transition: 200ms;
+             &:hover{
+                color: func.theme-colors();
+             }
+             
+             &.active{
+                color:  func.theme-colors();
+             }
+    }  
+  }
+}
+// .header .header--menu .header--menu--item > a:hover{
+    
+//         color:map-get(var.$theme-color ,"primary" );
+     
+
+// }
