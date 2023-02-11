@@ -4,17 +4,28 @@
 @import "./base/reset";
 @import "./base/global";
 
-
-//utilites
-@import "./utilities/animation";
-
-
 //components
 @import "./components/button";
+@import "./components/badge";
 
 
 //layouts
 @import "./layouts/header";
+@import "./layouts/background_element";
+
+//utilites
+@import "./utilities/animation";
+@import "./utilities/spacing";
+
+
+//pages
+@import "./pages/home";
+
+
+.mt-5{
+    margin-top: 5rem;
+}
+
 
 
 

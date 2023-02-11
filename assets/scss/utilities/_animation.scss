@@ -6,17 +6,27 @@
         color: blue;
     }
     30%{
-        color: rgb(255, 0, 30);
+        color: rgb(82, 83, 3);
     }
     60%{
-        color: rgb(255, 85, 0);
+        color: rgb(18, 231, 78);
     }
     80%{
-        color: rgb(3, 44, 26);
+        color: rgb(210, 26, 115);
     }
     100%{
-        color: rgb(255, 0, 208);
+        color: rgb(64, 0, 255);
     }
 
+    
+}
+
+@keyframes box-shape {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
     
 }

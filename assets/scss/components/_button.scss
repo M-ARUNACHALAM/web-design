@@ -10,13 +10,24 @@
     outline: none;
     display: inline-block;
     &-primary{
-    background-color:func.theme-colors();
-    color: white;
+        background-color: func.theme-colors();
+        color: white;
     &:hover{
         background-color: func.theme-colors("primary-hover");
     }
 
     }
-
+    &-primary-outline{
+        @extend .btn;
+        background-color: white;
+        border: 2px solid func.theme-colors();
+    }
+    &:hover{
+        background-color: func.theme-colors();
+        color: white;
+        cursor: pointer;
+    }
+   
 
 }
+
