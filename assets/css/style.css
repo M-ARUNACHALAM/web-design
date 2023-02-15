@@ -226,10 +226,10 @@ a {
     color: rgb(82, 83, 3);
   }
   60% {
-    color: rgb(18, 231, 78);
+    color: rgb(18, 181, 231);
   }
   80% {
-    color: rgb(210, 26, 115);
+    color: rgb(148, 77, 112);
   }
   100% {
     color: rgb(64, 0, 255);
@@ -905,6 +905,34 @@ a {
 
 h1 {
   font-size: large;
+}
+
+.about-area {
+  margin-top: 11rem;
+  padding: 8rem 20rem;
+  background-color: #3f43fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-area-img {
+  width: 32rem;
+}
+.about-area-content {
+  color: white;
+}
+.about-area-content h2 {
+  font-size: 3rem;
+}
+.about-area-content p {
+  line-height: 2;
+  color: #cfcfcf;
+}
+.about-area-content p a {
+  color: white;
+}
+.about-area-content p:hover {
+  text-shadow: 10px 20px 30px black;
 }
 
 .mt-5 {
