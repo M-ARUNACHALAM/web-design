@@ -1,0 +1,110 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as func;
+
+.roadmap{
+    padding: 8rem 20rem;
+    &-heading{
+        text-align: center;
+    }
+    &-items{
+        justify-content: center;
+        align-items:center ;
+        display: flex;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+    &-item{
+        text-align: center;
+        padding: 1rem 3rem;
+        max-width: 350px;
+        position: relative;
+        cursor: pointer;
+        filter: grayscale(100%);
+        &:hover &-img::after{
+            filter: grayscale(0);
+            animation: rotate-infinite 4000ms infinite;
+        }
+        &-img{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 30px;
+            &:hover{
+                filter: grayscale(0);
+            }
+            img{
+             width: 60px;
+             top: 9px;
+            }
+            &::after{
+                position: absolute;
+                border:5px dotted func.theme-colors();
+                width: 100%;
+                height: 100%;
+                top:0;
+                left: -5px;
+                content: "";
+                border-radius: 50%;
+            }
+            
+        }
+        &-content{
+            margin-top: 2rem;
+        
+        h5{
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+        p{
+            color: gray;
+            line-height: 1.5;
+        }
+    }
+    &:not(:last-child)::before{
+        transition: 500ms;
+        position: absolute;
+        content:"\f054";
+        font-family:"Font Awesome 5 Free";
+        width: 70px;
+        height: 70px;
+        color: #020702;
+        z-index: 1;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 1;
+        top: 35%;
+        right: -20%;
+        
+    }
+    &:hover:not(:last-child)::before{
+        color: func.theme-colors();
+        right:-22%;
+        
+    }
+    &:hover:last-child::after{
+        position: absolute;
+        content:"\f118\f164";
+        width: 100px;
+        height: 100px;
+        color:#020702;
+        z-index: 1;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 1;
+        top: 35%;
+        right: -10%;
+        font-family:"Font Awesome 5 Free";
+    }
+        &:hover h5{
+            color: func.theme-colors();
+        }
+        &:hover{
+            filter: grayscale(0);
+        }
+        
+        
+    }
+ }
+  
+
+
