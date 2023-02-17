@@ -1,0 +1,16 @@
+@use "../abstract/functions" as func;
+.form-control{
+    padding:0.8rem 1.5rem;
+    background-color: rgb(224, 224, 224);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    &:focus{
+        border: 2px solid func.theme-colors();
+    }
+}
+
+.resize-none{
+    resize: none;
+}
