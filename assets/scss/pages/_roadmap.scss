@@ -22,7 +22,7 @@
         filter: grayscale(100%);
         &:hover &-img::after{
             filter: grayscale(0);
-            animation: rotate-infinite 4000ms infinite;
+            animation: rotate-infinite 7000ms infinite;
         }
         &-img{
             position: relative;
